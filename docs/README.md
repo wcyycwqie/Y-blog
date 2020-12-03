@@ -1,19 +1,61 @@
 ---
 home: true
 heroImage: /assets/img/logo.png
-heroText: Everyone
-tagline: Welcome my blog
-actionText: Welcome my blog
-actionLink: /zh/guide/
-sidebar: auto
+heroText: Hello Everyone
+tagline: null
+actionText: null
+actionLink: null
+sidebar: true
 features:
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
-- title: 简洁至上
-  details: 以 Markdown 为中心的项目结构，以最少的配置帮助你专注于写作。
+- title: Wisdom
+  details: Wisdom in the mind is better than money in the hand.
+- title: Action
+  details: Actions speak louder than words.
+- title: Experience
+  details: Experience is the mother of wisdom.
 footer: Copyright © 2020-present YYM
 ---
 
-# Hello My Yblog
+# Welcome to My Yblog
+
+
+<script>
+console.log('hoho')
+
+module.exports = {
+
+}
+</script>
+
+<style lang="stylus">
+$bgColor = #50b6fa5b
+$fontColor = #FFF
+
+.theme-container
+  /* background: $bgColor; */
+  background: url('/assets/img/background/1.jpg') no-repeat
+  background-size: contain
+
+  min-height: 1080px;
+  .sidebar 
+    background: $bgColor;
+  .navbar 
+    background: $bgColor;
+    .links 
+      background: $bgColor;
+      border-radius: 16px;
+      color: #C00;
+
+  .hero img
+    width: 70px;
+  
+#app .home .feature
+  h2 
+    color: #FFF
+  p
+    color: #66CCFF
+
+#welcome-to-my-yblog
+  text-align center
+
+</style>
