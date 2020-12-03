@@ -1,17 +1,8 @@
-body,
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-ol,
-dl,
-li,
-dt,
-dd {
+$bgColor = #50b6fa00;
+$fontColor = #FFF;
+
+// 基础样式配置
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -19,17 +10,12 @@ dd {
     color: #FFF;
 }
 
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
+a, a:link, a:visited, a:hover, a:active {
     text-decoration: none;
     color: #11469B;
 }
 
-input,
-img {
+input, img {
     padding: 0;
     border: none;
     /* 轮廓线 */
@@ -51,3 +37,37 @@ img {
 .right {
     float: right;
 }
+
+.theme-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    background: $bgColor;
+    background: url('/assets/img/background/1.jpg') no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width: 100%;
+
+    .sidebar {
+        background: $bgColor;
+    }
+
+    .navbar {
+        background: $bgColor;
+
+        .links {
+            background: $bgColor;
+            border-radius: 16px;
+            color: #C00;
+        }
+    }
+    
+}
+
+.theme-default-content h1
+    text-align center
+
+

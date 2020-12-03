@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2020-12-02 17:13:42
+ * @LastEditTime: 2020-12-03 18:05:31
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -17,11 +17,11 @@ module.exports = {
                 link: '/'
             },
             {
-                text: 'user',
+                text: 'User',
                 link: '/user/'
             },
             {
-                text: 'game',
+                text: 'Game',
                 link: '/game/'
             },
             {

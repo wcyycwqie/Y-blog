@@ -18,6 +18,11 @@ footer: Copyright © 2020-present YYM
 
 # Welcome to My Yblog
 
+## h222222
+
+### h333333
+
+#### h444444
 
 <script>
 console.log('hoho')
@@ -27,15 +32,16 @@ module.exports = {
 }
 </script>
 
-<style lang="stylus">
+<style lang="stylus" src="../styles/home.styl" ></style>
+
+<!-- <style lang="stylus">
 $bgColor = #50b6fa5b
 $fontColor = #FFF
 
 .theme-container
-  /* background: $bgColor; */
+  background: $bgColor;
   background: url('/assets/img/background/1.jpg') no-repeat
   background-size: contain
-
   min-height: 1080px;
   .sidebar 
     background: $bgColor;
@@ -46,16 +52,8 @@ $fontColor = #FFF
       border-radius: 16px;
       color: #C00;
 
-  .hero img
-    width: 70px;
-  
-#app .home .feature
-  h2 
-    color: #FFF
-  p
-    color: #66CCFF
+ 
 
-#welcome-to-my-yblog
-  text-align center
+</style> -->
 
-</style>
+
