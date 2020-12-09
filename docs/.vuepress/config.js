@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2020-12-03 18:05:31
+ * @LastEditTime: 2020-12-04 18:05:29
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -10,6 +10,7 @@ module.exports = {
     port: 7878,
     title: 'Yblog',
     description: 'Just playing around',
+    dest: './dist',
     themeConfig: {
         logo: '/assets/img/logo.png',
         nav: [{

@@ -16,13 +16,13 @@ features:
 footer: Copyright © 2020-present YYM
 ---
 
-# Welcome to My Yblog
-
-## h222222
-
-### h333333
-
-#### h444444
+<h2>1231321</h2>
+<Game></Game>
+<Game></Game>
+<Game></Game>
+<Game></Game>
+<Game></Game>
+<h4>hohohoho</h4>
 
 <script>
 console.log('hoho')
@@ -32,9 +32,8 @@ module.exports = {
 }
 </script>
 
-<style lang="stylus" src="../styles/home.styl" ></style>
 
-<!-- <style lang="stylus">
+<style lang="stylus">
 $bgColor = #50b6fa5b
 $fontColor = #FFF
 
@@ -48,12 +47,21 @@ $fontColor = #FFF
   .navbar 
     background: $bgColor;
     .links 
-      background: $bgColor;
+      /* background: $bgColor; */
       border-radius: 16px;
       color: #C00;
 
- 
+ .hero img
+  width: 70px;
+#app .home .feature
+  h2 
+    color: #FFF
+  p
+    color: #66CCFF
 
-</style> -->
+.theme-default-content h1
+  text-align center
+
+</style>
 
 
