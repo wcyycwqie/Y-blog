@@ -18,11 +18,24 @@ footer: Copyright © 2020-present YYM
 
 <h2>1231321</h2>
 <Game></Game>
-<Game></Game>
-<Game></Game>
-<Game></Game>
-<Game></Game>
+
 <h4>hohohoho</h4>
+<h4>hohohoho</h4>
+<h4>hohohoho</h4>
+<Game></Game><h2>1231321</h2>
+<Game></Game>
+
+<h4>hohohoho</h4>
+<h4>hohohoho</h4>
+<h4>hohohoho</h4>
+<Game></Game><h2>1231321</h2>
+<Game></Game>
+
+<h4>hohohoho</h4>
+<h4>hohohoho</h4>
+<h4>hohohoho</h4>
+<Game></Game>
+
 
 <script>
 console.log('hoho')
@@ -38,10 +51,10 @@ $bgColor = #50b6fa5b
 $fontColor = #FFF
 
 .theme-container
-  background: $bgColor;
+  /* background: $bgColor;
   background: url('/assets/img/background/1.jpg') no-repeat
-  background-size: contain
-  min-height: 1080px;
+  background-size: contain */
+
   .sidebar 
     background: $bgColor;
   .navbar 
