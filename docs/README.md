@@ -17,28 +17,10 @@ footer: Copyright © 2020-present YYM
 ---
 
 <h2>1231321</h2>
-<Game></Game>
 
-<h4>hohohoho</h4>
-<h4>hohohoho</h4>
-<h4>hohohoho</h4>
-<Game></Game><h2>1231321</h2>
-<Game></Game>
-
-<h4>hohohoho</h4>
-<h4>hohohoho</h4>
-<h4>hohohoho</h4>
-<Game></Game><h2>1231321</h2>
-<Game></Game>
-
-<h4>hohohoho</h4>
-<h4>hohohoho</h4>
-<h4>hohohoho</h4>
-<Game></Game>
-
+<Home></Home>
 
 <script>
-console.log('hoho')
 
 module.exports = {
 
@@ -51,9 +33,17 @@ $bgColor = #50b6fa5b
 $fontColor = #FFF
 
 .theme-container
-  /* background: $bgColor;
-  background: url('/assets/img/background/1.jpg') no-repeat
-  background-size: contain */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #66CCFF;
+  /* background: url('/assets/img/background/1.jpg') no-repeat; */
+  background-size: cover;
+  background-position: 0 0;
+  width: 100%;
+  overflow auto;
 
   .sidebar 
     background: $bgColor;
@@ -65,12 +55,12 @@ $fontColor = #FFF
       color: #C00;
 
  .hero img
-  width: 70px;
+    width: 70px;
 #app .home .feature
   h2 
     color: #FFF
   p
-    color: #66CCFF
+    color: #FFF
 
 .theme-default-content h1
   text-align center
