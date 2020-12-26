@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 11:03:29
- * @LastEditTime: 2020-12-02 11:03:43
+ * @LastEditTime: 2020-12-25 17:54:25
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\enhanceApp.js
@@ -15,4 +15,5 @@ export default ({
     isServer // 当前应用配置是处于 服务端渲染 或 客户端
   }) => {
     // ...做一些其他的应用级别的优化
+    
   }

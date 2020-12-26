@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-12-09 15:31:37
- * @LastEditTime: 2020-12-23 18:26:04
+ * @LastEditTime: 2020-12-26 11:12:11
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\components\Home.vue
@@ -9,10 +9,8 @@
 
 <template>
   <div class="home">
-    <div class="article-list">
-      <a href="./game/g1">Game</a>
-    </div>
-    
+    <div class="home-contanier">123</div>
+    <div class="article-list"></div>
   </div>
 </template>
 
@@ -22,13 +20,19 @@ export default {
   data: '',
   methods: {
     goToGame() {
-      console.log('go to game');
+      console.log('go to game')
       this.$router.push('./game/g1')
     }
   }
 }
 </script>
 
-<style>
+<style lang="stylus" scoped></style>
 
+<style lang="stylus" scoped>
+.home-contanier {
+  min-width: 1080px;
+  height: 70vh;
+  background: #421224; 
+}
 </style>

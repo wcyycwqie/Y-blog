@@ -15,9 +15,6 @@ features:
   details: Experience is the mother of wisdom.
 footer: Copyright © 2020-present YYM
 ---
-
-<h2>1231321</h2>
-
 <Home></Home>
 
 <script>
@@ -46,9 +43,9 @@ $fontColor = #FFF
   overflow auto;
 
   .sidebar 
-    background: $bgColor;
+    /* background: $bgColor;      */
   .navbar 
-    background: $bgColor;
+    /* background: $bgColor; */ 
     .links 
       /* background: $bgColor; */
       border-radius: 16px;
