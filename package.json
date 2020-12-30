@@ -15,5 +15,9 @@
   "license": "ISC",
   "devDependencies": {
     "vuepress": "^1.7.1"
+  },
+  "dependencies": {
+    "less": "^4.0.0",
+    "less-loader": "^7.2.1"
   }
 }

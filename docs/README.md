@@ -35,7 +35,7 @@ $fontColor = #FFF
   left: 0;
   right: 0;
   bottom: 0;
-  background: #66CCFF;
+  background: #66CCFFAA;
   /* background: url('/assets/img/background/1.jpg') no-repeat; */
   background-size: cover;
   background-position: 0 0;
@@ -53,7 +53,9 @@ $fontColor = #FFF
 
  .hero img
     width: 70px;
+  
 #app .home .feature
+  text-align: center;
   h2 
     color: #FFF
   p
