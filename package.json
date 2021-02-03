@@ -18,6 +18,9 @@
   },
   "dependencies": {
     "less": "^4.0.0",
-    "less-loader": "^7.2.1"
+    "less-loader": "^7.2.1",
+    "markdown-it-anchor": "^7.0.1",
+    "markdown-it-toc-done-right": "^4.2.0",
+    "uslug": "^1.0.4"
   }
 }

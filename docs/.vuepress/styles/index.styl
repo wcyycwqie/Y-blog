@@ -115,6 +115,7 @@ body::-webkit-scrollbar-button {
         // background: url('/assets/img/background/2.png') no-repeat;
         background-size: 100% auto;
         transition: all 0.5s;
+        overflow:hidden;
 
         // border: none;
         &::before {
@@ -132,7 +133,9 @@ body::-webkit-scrollbar-button {
             background: url('/assets/img/background/2.png') no-repeat;
             background-size: 100% auto;
             filter: blur(2px);
-            transition: all 0.5s;
+            // filter: opacity(85%);
+            // transition: all 1.5s;
+            overflow auto;
         }
 
         &:hover {

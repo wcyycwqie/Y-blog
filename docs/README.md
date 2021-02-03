@@ -15,6 +15,8 @@ features:
   details: Experience is the mother of wisdom.
 footer: Copyright © 2020-present YYM
 ---
+[[toc]]
+
 <Home></Home>
 
 <script>
