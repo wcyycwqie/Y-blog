@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: /assets/img/logo.png
-heroText: Hello Everyone
+heroText: Fight! YYM
 tagline: null
 actionText: null
 actionLink: null
@@ -45,7 +45,7 @@ $fontColor = #FFF
   overflow auto;
 
   .sidebar 
-    /* background: $bgColor;      */
+    /* background: $bgColor; */
   .navbar 
     /* background: $bgColor; */ 
     .links 

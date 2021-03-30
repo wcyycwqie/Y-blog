@@ -1,10 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2020-12-03 17:49:45
- * @LastEditTime: 2020-12-03 17:55:21
- * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2021-03-16 17:50:57
+ * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
- * @FilePath: \Yblog\docs\.vuepress\components\game.vue
+ * @FilePath: \Yblog\docs\.vuepress\components\Game.vue
 -->
 
 <template>
