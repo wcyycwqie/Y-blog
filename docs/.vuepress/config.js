@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-02-02 14:40:23
+ * @LastEditTime: 2021-04-16 17:43:28
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -33,23 +33,32 @@ module.exports = {
                 link: '/'
             },
             {
+                text: 'Web',
+                link: '/web/'
+            },
+            {
                 text: 'User',
                 link: '/user/'
             },
-            {
-                text: 'Game',
-                link: '/game/'
-            },
+
             {
                 text: 'External',
                 link: 'https://www.bilibili.com'
             },
         ],
         sidebar: [
-            '/',
-            '/user/',
-            '/game/'
-        ]
+            {
+                title: 'Web Group',
+                path: '/web',
+                collapsable: false, // 可选的, 默认值是 true,
+                children: [
+                    '/web/webOne',
+                    '/web/webTwo',
+                ],
+            }
+
+        ],
+        displayAllHeaders: true
     },
     configureWebpack: (config, isServer) => {
         if (!isServer) {
