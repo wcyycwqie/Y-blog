@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-04-16 17:43:28
+ * @LastEditTime: 2021-04-19 18:32:05
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -24,7 +24,7 @@ var md = require("markdown-it")({
 module.exports = {
     port: 7878,
     title: 'Yblog',
-    description: 'Just playing around',
+    description: 'Just Playing Around',
     dest: './dist',
     themeConfig: {
         logo: '/assets/img/logo.png',
@@ -52,8 +52,18 @@ module.exports = {
                 path: '/web',
                 collapsable: false, // 可选的, 默认值是 true,
                 children: [
-                    '/web/webOne',
-                    '/web/webTwo',
+                    {   
+                        title: 'Css Group',
+                        path:'/web/css',
+                        children: [
+                            '/web/css/webTwo',
+                        ]
+                    },
+                    {
+                        title: 'wOne',
+                        path: '/web/html/webOne'
+                    }
+                    
                 ],
             }
 
