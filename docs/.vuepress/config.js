@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-04-19 18:32:05
+ * @LastEditTime: 2021-04-21 18:20:38
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -40,7 +40,6 @@ module.exports = {
                 text: 'User',
                 link: '/user/'
             },
-
             {
                 text: 'External',
                 link: 'https://www.bilibili.com'
@@ -48,21 +47,19 @@ module.exports = {
         ],
         sidebar: [
             {
-                title: 'Web Group',
+                title: 'Web World',
                 path: '/web',
-                collapsable: false, // 可选的, 默认值是 true,
+                collapsable: false, // 是否折叠, 默认值是 true,
                 children: [
                     {   
-                        title: 'Css Group',
-                        path:'/web/css',
+                        title: 'JavaScript',
+                        path:'/web/javascript/',
                         children: [
-                            '/web/css/webTwo',
+                            '/web/javascript/Javascript-summary',
+                            '/web/javascript/Canvas'
                         ]
                     },
-                    {
-                        title: 'wOne',
-                        path: '/web/html/webOne'
-                    }
+                    // '/web/javascript/Javascript-summary'
                     
                 ],
             }
