@@ -7,6 +7,8 @@ typora-root-url: ./
 
 #  Javascript 总结
 
+[[toc]]
+
 ## 数据类型
 
 **基本数据类型：**
@@ -126,9 +128,52 @@ div.removeChild(div.childNodes[0]);
 
 
 
+## 字符串对象
+
+字符串（String） 对象
+
+- 长度属性length 计算字符串长度
+
+  ```javascript
+  var s = 'abc';
+  s.length // 3
+  ```
+
+- split()  把一个字符串分割成字符串数组:
+
+  ```javascript
+  var s = 'abc';
+  s.split(''); // ['a', 'b', 'c']
+  s.split('b'); // ['a', 'c']
+  ```
+
+- indexOf() 从首位开始定位第一个指定的字符首次出现的位置，返回索引，如果不存在则返回-1。
+
+  ```javascript
+  var s = 'abcabc';
+  s.indexOf('a'); // 0
+  s.indexOf('b'); // 1
+  s.indexOf('c'); // 2
+  s.indexOf('d'); // -1
+  ```
+
+- lastIndexOf() 从末位开始定位查找第一个指定的字符首次出现的位置，返回索引，如果不存在则返回-1。
+
+    ```javascript
+  var s = 'abccba'
+  s.indexOf('a'); // 5
+  s.indexOf('b'); // 4
+  s.indexOf('c'); // 3
+  s.indexOf('d'); // -1
+    ```
+
+- 
+
+- 
 
 
-## 字符串方法
+
+
 
 
 

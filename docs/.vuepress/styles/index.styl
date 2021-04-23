@@ -1,4 +1,5 @@
-$bgColor = #50b6fa00;
+$bgColor-dark = #50b6fa00;
+$bgColorI = #66CCFF;
 $fontColor = #FFF;
 
 // 基础样式配置
@@ -63,6 +64,7 @@ body::-webkit-scrollbar-button {
     height: 0;
     background-color: #000000;
 }
+ 
 
 .theme-container {
     position: fixed;
@@ -71,8 +73,8 @@ body::-webkit-scrollbar-button {
     right: 0;
     bottom: 0;
     padding-top: 9.375vw;
-    // background: #66CCFF;
-    background: url('/assets/img/background/1.jpg') no-repeat;
+    background: $bgColorI;
+    // background: url('/assets/img/background/1.jpg') no-repeat;
     background-size: cover;
     background-position: 0 0;
     width: 100%;
@@ -104,14 +106,14 @@ body::-webkit-scrollbar-button {
 
     .sidebar {
         margin-top: 6.375vw;
-        background: $bgColor;
-        background: #66CCFF;
+        background: $bgColor-dark;
+        background: $bgColorI;
     }
 
     .navbar {
         min-height: 155px;
         height: 9.375vw;
-        background: $bgColor;
+        background: $bgColor-dark;
         // background: url('/assets/img/background/2.png') no-repeat;
         background-size: 100% auto;
         transition: all 0.5s;
@@ -131,7 +133,7 @@ body::-webkit-scrollbar-button {
             width: 100%;
             min-height: 155px;
             height: 9.375vw;
-            background: $bgColor;
+            background: $bgColor-dark;
             background: url('/assets/img/background/2.png') no-repeat;
             background-size: 100% auto;
             filter: blur(2px);
@@ -149,7 +151,7 @@ body::-webkit-scrollbar-button {
         }
 
         .links {
-            background: $bgColor;
+            background: $bgColor-dark;
             border-radius: 16px;
             color: #C00;
         }
