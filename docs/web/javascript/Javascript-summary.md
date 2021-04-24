@@ -109,7 +109,7 @@ div.removeChild(div.childNodes[0]);
 
 
 
-#### 常用方法:
+#### 常用方法
 
 | 方法                     |                             描述                             |
 | ------------------------ | :----------------------------------------------------------: |
@@ -139,7 +139,7 @@ div.removeChild(div.childNodes[0]);
   s.length // 3
   ```
 
-- split()  把一个字符串分割成字符串数组:
+- split()  把一个字符串分割成字符串数组
 
   ```javascript
   var s = 'abc';
@@ -165,7 +165,7 @@ div.removeChild(div.childNodes[0]);
   s.indexOf('b'); // 4
   s.indexOf('c'); // 3
   s.indexOf('d'); // -1
-    ```
+  ```
 
 - 
 

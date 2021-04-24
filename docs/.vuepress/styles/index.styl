@@ -1,5 +1,6 @@
 $bgColor-dark = #50b6fa00;
-$bgColorI = #66CCFF;
+$MyColorI = #66CCFF;
+$bgColorI = #1C4877;
 $fontColor = #FFF;
 
 // 基础样式配置
@@ -12,8 +13,8 @@ body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd {
 }
 
 a, a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: #11469B;
+    // text-decoration: none;
+    color: #FFF;
 }
 
 input, img {
@@ -64,14 +65,14 @@ body::-webkit-scrollbar-button {
     height: 0;
     background-color: #000000;
 }
- 
 
 .theme-container {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 0;
     padding-top: 9.375vw;
     background: $bgColorI;
     // background: url('/assets/img/background/1.jpg') no-repeat;
@@ -79,6 +80,21 @@ body::-webkit-scrollbar-button {
     background-position: 0 0;
     width: 100%;
     overflow: auto;
+
+    &::after {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        padding-top: 9.375vw;
+        background: url('/assets/img/background/1.jpg') no-repeat;
+        background-size: cover;
+        background-position: 0 0;
+        width: 100%;
+    }
 
     &::-webkit-scrollbar {
         width: 4px;
@@ -108,6 +124,14 @@ body::-webkit-scrollbar-button {
         margin-top: 6.375vw;
         background: $bgColor-dark;
         background: $bgColorI;
+
+        a.sidebar-link {
+            color: #FFF;
+
+            &.active {
+                color: #66CCFF;
+            }
+        }
     }
 
     .navbar {
@@ -172,8 +196,25 @@ body::-webkit-scrollbar-button {
     }
 }
 
-.theme-default-content h1 {
-    text-align: center;
+.theme-default-content {
+    &:not(.custom) {
+        max-width: 980px;
+        min-height: 960px;
+        background: $bgColorI;
+
+        h1 {
+            // text-align: center;
+        }
+
+        table {
+            tr {
+                &:nth-child(2n) {
+                    background: #282C34; 
+                    // color: $bgColorI;
+                }
+            }
+        }
+    }
 }
 
 // y-elment-style
