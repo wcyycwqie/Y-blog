@@ -128,7 +128,7 @@ div.removeChild(div.childNodes[0]);
 
 
 
-## 字符串对象
+## 字符串对象(String)
 
 字符串（String） 对象
 
@@ -142,6 +142,7 @@ div.removeChild(div.childNodes[0]);
 - split()  把一个字符串分割成字符串数组
 
   ```javascript
+  //string.split(separator)
   var s = 'abc';
   s.split(''); // ['a', 'b', 'c']
   s.split('b'); // ['a', 'c']
@@ -167,17 +168,289 @@ div.removeChild(div.childNodes[0]);
   s.indexOf('d'); // -1
   ```
 
-- 
+- substring()  返回字符串中介于两个指定下标之间的字符。(不改变原字符串);
+
+    ```javascript
+    //string.substring(start, end)
+    var s = 'abc';
+    s.substring(0, 2) // "ab"
+    s.substring(1, 2) // "b"
+    ```
+
+- slice() 返回提取字符串的片段。(不改变原字符串)
+
+    ```javascript
+    //string.substring(start, end)
+    var s = 'abc';
+    s.slice(0, 2) // "ab"
+    s.slice(1, 3) // "bc"
+    ```
+
+- substr()  返回字符串中从开始的下标开始的指定数目的字符。(不改变原字符串)
+
+    ```javascript
+    //string.substring(start, length)
+    var s = 'abcde';
+    s.substr(0, 3); // "abc"
+    s.substr(1, 3); // "bcd"
+    ```
+
+- split() 把一个字符串分割成字符串数组
+
+    ```javascript
+    // string.split(separator)
+    var s = 'abcabc';
+    s.split('') // ["a", "b", "c", "a", "b", "c"]
+    s.split('b') //  ["a", "ca", "c"]
+    ```
+    
+    
+
+
+
+## 数组对象(Array)
+
+Array数组对象
+
+- 长度属性length 计算数组长度
+
+  ```javascript
+  var arr = [1, 2, 3];
+  arr.length // 3
+  ```
+
+- toString()  将数组转换为数组元素（逗号分隔）的字符串
+
+  ```javascript
+  var arr = [1, 2, 3];
+  arr.toString() // "1,2,3"
+  ```
+
+-  join() 将数组转化为数组元素由可指定分隔符组成的字符串
+
+  ```javascript
+  // array.join(separator)
+  var arr = [1, 2, 3];
+  arr.join() // "1,2,3"
+  arr.join('') // "123"
+  arr.join('a') // "1a2a3"
+  ```
+
+-  concat() 连接两个或者多个数组，返回新数组，不改变原数组
+
+  ```javascript
+  // array1.concat(array2,array3,...,arrayX)
+  var arr = [1, 2, 3];
+  var arr2 = ['a', 'b', 'c'];
+  arr.concat(arr2) // [1, 2, 3, "a", "b", "c"]
+  var arr3 = arr.concat(arr2)
+  arr // [1, 2, 3]
+  arr3 // [1, 2, 3, "a", "b", "c"]
+  ```
+
+- .isArray()  用于判断一个对象是否为数组,如果是返回true,不是返回false
+
+  ```javascript
+  // Array.isArray(obj)
+  var obj = {'a': 123};
+  var arr = [1, 2, 3];
+  Array.isArray(obj) // false
+  Array.isArray(arr) // true
+  ```
+
+- includes() 用于判断数组(可选择初始位置开始检测)是否包含一个指定元素，如果是返回true,不是返回false
+
+  ```javascript
+  // array.includes(searchElement, ?fromIndex)
+  var arr = [1, 2, 3];
+  arr.includes(1) // true
+  arr.includes(1, 2) // false
+  arr.includes(4) // false
+  ```
+
+- indexOf() 可将从头到尾地检索数组指定的元素位置，返回对应的索引，如果不存在返回-1
+
+  ```javascript
+  // array.indexOf(searchElement, ?fromIndex)
+  var arr = [1, 2, 3];
+  arr.indexOf(1) // 0
+  arr.indexOf(2) // 1
+  arr.indexOf(3) // 2
+  arr.indexOf(4) // -1
+  arr.indexOf(1,1) // -1
+  ```
+
+- lastIndexOf()  可返回一个指定的元素在数组中最后出现的位置，返回对应的索引，从该字符串的后面向前查找，如果不存在返回-1
+
+  ```javascript
+  // array.lastIndexOf(searchElement, ?fromIndex)
+  var arr = [1, 2, 3, 1, 2, 3];
+  arr.lastIndexOf(1) // 3
+  arr.lastIndexOf(2) // 4
+  arr.lastIndexOf(3) // 5
+  arr.lastIndexOf(4) // -1
+  ```
+
+- push() 可向数组的**末尾**添加一个或多个元素，并返回新的长度。
+
+  ```javascript
+  // array.push(item1, item2, ..., itemX)
+  var arr = ['a', 'b'];
+  arr.push('c'); // 3
+  console.log(arr) // ["a", "b", "c"]
+  ```
+
+- unshift() 可向数组的**开头**添加一个或更多元素，并返回新的长度。
+
+  ```javascript
+  // array.unshift(item1, item2, ..., itemX)
+  var arr = ['a', 'b'];
+  arr.unshift('c'); // 3
+  console.log(arr) // ["c", "a", "b"]
+  ```
+
+- pop() 用于删除数组的**最后一个**元素并返回删除的元素, 改变数组的长度。
+  ```javascript
+  // array.pop()
+  var arr = ['a', 'b', 'c'];
+  arr.pop(); // "c"
+  console.log(arr) // ["a", "b"]
+  ```
+  
+- shift() 用于把数组的**第一个**元素从其中删除，并返回第一个元素的值。
+  ```javascript
+  // array.shift()
+  var arr = ['a', 'b', 'c'];
+  arr.shift(); // "a"
+  console.log(arr) // ["b", "c"]
+  ```
+  
+- slice()  可从数组中返回含有选定的元素的新数组
+
+  ```javascript
+  // array.slice(start, end)
+  var arr = ['a', 'b', 'c'];
+  arr.slice(0,2) // ["a", "b"]
+  ```
+
+- splice() 用于添加或删除数组中的元素,返回含有删除元素的新数组，改变原数组。
+
+  ```javascript
+  /* array.splice(index,?howmany,?item1,.....,?itemX)
+  index: 进行添加或删除的起始位置索引
+  howmany： 删除元素的数量，如果未规定此参数，则从起始位置删除到最后位置。
+  tem1, ..., itemX： 添加到数组的新元素
+  */
+  var arr = [1, 2, 3, 4, 5];
+  var result = arr.splice(1, 2, 888);
+  console.log(result) // [2, 3] 
+  console.log(arr); // [1, 888, 4, 5]
+  ```
 
 - 
 
+- forEach()  循环遍历数组，调用数组的每个元素，并将元素传递给回调函数。
+
+  ```javascript
+  /* 
+  array.forEach(function(currentValue, ?index, ?arr))
+  currentValue ： 当前元素
+  index ： 当前元素的索引值
+  arr : 当前元素所属的数组对象
+  */
+  var arr = [1, 2, 3];
+  var sum = 0;
+  arr.forEach(function(el, index, arr) {
+  	sum += el             
+  });
+  console.log(sum) // 6
+  ```
+
+- every()  用于检测数组所有元素是否都符合指定条件,如果检测到有一个元素不满足条件，则整个表达式返回 *false* ，且剩余的元素不会再进行检测； 如果所有元素都满足条件，则返回 true。
+
+  ```javascript
+  /* 
+  array.every(function(currentValue, ?index, ?arr))
+  currentValue ： 当前元素
+  index ： 当前元素的索引值
+  arr : 当前元素所属的数组对象
+  */
+  var arr = [10, 20, 30];
+  var result = arr.every(function(el, index) {
+      return el > 15
+  })
+  console.log(result) // false
+  var result2 = arr.every(function(el, index) {
+      return el > 5
+  })
+  console.log(result2) // true
+  ```
+
+- map() 对原数组的每个元素都通过函数的处理，返回一个新的数组
+
+  ```javascript
+  /* 
+  array.map(function(currentValue, ?index, ?arr))
+  currentValue ： 当前元素
+  index ： 当前元素的索引值
+  arr : 当前元素所属的数组对象
+  */
+  var arr = [1, 2, 3];
+  var result = arr.map(function (el, index) {
+      return el * 2
+  })
+  console.log(result) // [2, 4, 6]
+  ```
+
+- find() 循环遍历数组，当数组中的元素首次满足测试条件返回 true 时,  返回符合条件的元素，之后的值不会再调用执行函数，如果没有符合条件的元素返回 undefined
+
+  ```javascript
+  /* 
+  array.find(function(currentValue, ?index, ?arr))
+  currentValue ： 当前元素
+  index ： 当前元素的索引值
+  arr : 当前元素所属的数组对象
+  */
+  var arr = [10, 20, 30];
+  var result = arr.find(function (el, index) {
+      return el > 15
+  })
+  console.log(result) // 20
+  ```
+
+- some() 循环遍历数组，检测数组中的元素是否满足函数指定条件，如果有一个元素满足返回true, 并且不会继续执行函数,如果没有符合条件的元素返回false
+
+  ```javascript
+  /* 
+  array.some(function(currentValue, ?index, ?arr))
+  currentValue ： 当前元素
+  index ： 当前元素的索引值
+  arr : 当前元素所属的数组对象
+  */
+  var arr = [10, 20, 30];
+  var result = arr.some(function (el, index) {
+      return el > 15
+  })
+  console.log(result) // true
+  var result2 = arr.some(function (el, index) {
+      return el > 40
+  })
+  console.log(result) // false
+  ```
+
+  
+
+  
+
+- 
 
 
 
 
 
 
-## 数组方法
+
+
 
 
 
