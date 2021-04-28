@@ -325,7 +325,7 @@ Array数组对象
   console.log(arr) // ["b", "c"]
   ```
   
-- slice()  可从数组中返回含有选定的元素的新数组
+- slice()  可从数组中返回含有选定位置的元素组成的新数组
 
   ```javascript
   // array.slice(start, end)
@@ -346,8 +346,6 @@ Array数组对象
   console.log(result) // [2, 3] 
   console.log(arr); // [1, 888, 4, 5]
   ```
-
-- 
 
 - forEach()  循环遍历数组，调用数组的每个元素，并将元素传递给回调函数。
 
@@ -438,11 +436,74 @@ Array数组对象
   console.log(result) // false
   ```
 
-  
+- filter() 循环遍历数组，返回包含符合条件的所有元素的新数组。
 
-  
+  ```javascript
+  /* 
+  array.filter(function(currentValue, ?index, ?arr))
+  currentValue ： 当前元素
+  index ： 当前元素的索引值
+  arr : 当前元素所属的数组对象
+  */
+  var arr = [10, 20, 30];
+  var result = arr.filter(function (el, index) {
+      return el > 15
+  })
+  console.log(result) // [20, 30]
+  ```
 
-- 
+- sort() 对原数组进行排序（改变原数组），默认升序排序
+
+  ```javascript
+  // array.sort(?sortfunction)
+  var arr = [3, 5, 1, 6, 2]
+  arr.sort() // [1, 2, 3, 5, 6] 
+  console.log(arr) // [1, 2, 3, 5, 6]
+  arr.sort(function(a,b){return b - a}) // [6, 5, 3, 2, 1]
+  arr.sort(function(a,b){return a - b}) // [1, 2, 3, 5, 6]
+  ```
+
+
+
+## 原型及原型链
+
+原型链是javascript中非常重要的概念，它是js实现继承功能的基础。
+
+
+
+## 微任务和宏任务（event loop)
+
+#### 宏任务（MacroTask）
+
+script全部代码、setTimeout、setInterval、setImmediate（浏览器暂时不支持，只有IE10支持，具体可见MDN）、I/O操作、UI Rendering。
+
+#### 微任务（MicroTask）
+
+Process.nextTick（Node独有）、Promise、Object.observe(废弃)、MutationObserver
+
+
+
+
+
+## 网络请求
+
+### AJAX
+
+AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。
+
+AJAX 可以发起对服务器的网络请求。
+
+AJAX 可以在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页内容(优点：异步加载数据)。
+
+
+
+
+
+
+
+
+
+
 
 
 
