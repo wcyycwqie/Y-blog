@@ -469,6 +469,8 @@ Array数组对象
 
 原型链是javascript中非常重要的概念，它是js实现继承功能的基础。
 
+- 在JS中， 每个实例对象都有一个原型```__proto__```， 这个原型指向它的构造函数的原型对象prototyoe，同理，这个原型对象prototyoe也有对应的原型```__proto__```并指向它的构造函数的原型对象，以此类推，可以形成由__```__proto__```__指向prototype再指向```__proto__```的循环，到 ```Object.prototype.__proto__```为止(因为```Object.prototype.__proto__==null```)的链。
+
 
 
 ## 微任务和宏任务（event loop)

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-04-21 18:20:38
+ * @LastEditTime: 2021-05-07 18:26:24
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -22,7 +22,7 @@ var md = require("markdown-it")({
     .use(require("markdown-it-toc-done-right"));
 
 module.exports = {
-    port: 7878,
+    port: 6868,
     title: 'Yblog',
     description: 'Just Playing Around',
     dest: './dist',

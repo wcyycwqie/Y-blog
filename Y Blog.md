@@ -12,7 +12,9 @@ I will review what I learn and show how I study
 
 I  want to show what I or others want 
 
-#### 2021.02.02
+#### 2021.04.30
+
+Yblog is published in http://www.yfunny.cool:6868/.
 
 
 
