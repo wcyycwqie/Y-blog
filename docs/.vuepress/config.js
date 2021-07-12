@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-05-07 18:26:24
+ * @LastEditTime: 2021-07-12 18:19:42
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -45,22 +45,27 @@ module.exports = {
                 link: 'https://www.bilibili.com'
             },
         ],
-        sidebar: [
-            {
+        sidebar: [{
                 title: 'Web World',
                 path: '/web',
                 collapsable: false, // 是否折叠, 默认值是 true,
-                children: [
-                    {   
+                children: [{
                         title: 'JavaScript',
-                        path:'/web/javascript/',
+                        path: '/web/javascript/',
                         children: [
                             '/web/javascript/Javascript-summary',
                             '/web/javascript/Canvas'
                         ]
                     },
+                    {
+                        title: 'Node.js',
+                        path: '/web/node/',
+                        children: [
+                            '/web/node/node-basic',
+                        ]
+                    }
                     // '/web/javascript/Javascript-summary'
-                    
+
                 ],
             }
 
