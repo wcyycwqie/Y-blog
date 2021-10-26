@@ -463,6 +463,21 @@ Array数组对象
   arr.sort(function(a,b){return a - b}) // [1, 2, 3, 5, 6]
   ```
 
+- 伪数组转数组的各种方法记录
+  - 使用数组方法Array.form(obj)
+
+    `let arr = Array.from(obj)`
+
+  - 使用拓展运算符`...`
+
+    `let arr = [...obj] `
+
+  - 使用数组方法 slice() 
+
+    `let arr = Array.prototype.slice.call(obj)`
+
+  
+
 
 
 ## 原型及原型链
