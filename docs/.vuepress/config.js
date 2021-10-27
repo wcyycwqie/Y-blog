@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-07-12 18:19:42
+ * @LastEditTime: 2021-10-27 10:50:33
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -63,6 +63,10 @@ module.exports = {
                         children: [
                             '/web/node/node-basic',
                         ]
+                    },
+                    {
+                        title: 'Git',
+                        path: '/web/others/git',
                     }
                     // '/web/javascript/Javascript-summary'
 

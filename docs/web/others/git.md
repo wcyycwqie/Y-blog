@@ -1,6 +1,10 @@
+---
+
+
+typora-copy-images-to: Md-IMG
+typora-root-url: ./
+---
 # Git
-
-
 
 ## Github Token 
 
@@ -8,7 +12,7 @@
 
 github出于安全的考虑，将在2021年8月停止使用账号和密码的方式访问github仓库，改为token认证的方式。
 
-```php
+```git
 $ git push
 remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
 remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
@@ -16,11 +20,17 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 
 #### 创建token
 
-![image-20210817183432163](E:\Y\Project\Yblog\docs\web\others\Md-IMG\image-20210817183432163.png)
+![image-20210817183432163](/Md-IMG/image-20210817183432163.png)
 
-![image-20211026183559910](E:\Y\Project\Yblog\docs\web\others\Md-IMG\image-20211026183559910.png)
+------
 
-![image-20211026183624976](E:\Y\Project\Yblog\docs\web\others\Md-IMG\image-20211026183624976.png)
+![image-20211026183559910](/Md-IMG/image-20211026183559910.png)
+
+------
+
+
+
+![image-20211026183624976](/Md-IMG/image-20211026183624976.png)
 
 #### 设置token
 
