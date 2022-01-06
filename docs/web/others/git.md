@@ -34,6 +34,6 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 
 #### 设置token
 
-`git remote set-url origin https:// + 'token' + @github.com/ ' + '仓库路径' `
+`git remote set-url origin https:// + token + '@github.com/' + 仓库路径 `
 
 设置完了就可以正常推送代码
