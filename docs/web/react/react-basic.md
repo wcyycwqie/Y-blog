@@ -10,21 +10,9 @@ react只有视图层(view)，只负责视图的渲染。
 
 ## React环境搭建
 
-#### 技术栈
-
-- react
-- ant-design
-- 
-
 通过脚手架来安装react
 
 `npx creat-react=app y-mage`
-
-安装ant-design
-
-`yarn add antd`
-
-
 
 #### 目录结构
 
