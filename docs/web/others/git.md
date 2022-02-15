@@ -1,8 +1,6 @@
 ---
-
-
-typora-copy-images-to: Md-IMG
-typora-root-url: ./
+typora-copy-images-to: ..\..\.vuepress\public\Md-IMG
+typora-root-url: ..\..\.vuepress\public
 ---
 # Git
 
@@ -36,6 +34,6 @@ remote: Please see https://github.blog/2020-12-15-token-authentication-requireme
 
 `git remote set-url origin https:// + token + '@github.com/' + 仓库路径 `
 
-![image-20220106102922802](C:\Y\Project\Yblog\docs\web\others\Md-IMG\image-20220106102922802.png)
+![image-20220106102922802](/Md-IMG/image-20220106102922802.png)
 
 设置完了就可以正常推送代码

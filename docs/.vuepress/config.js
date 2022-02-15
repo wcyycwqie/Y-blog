@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2021-10-27 10:50:33
+ * @LastEditTime: 2022-02-15 11:24:50
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -11,14 +11,14 @@ const path = require('path');
 console.log(__dirname);
 
 var md = require("markdown-it")({
-        html: true,
-        xhtmlOut: true,
-        typographer: true
-    }).use(require("markdown-it-anchor"), {
-        permalink: true,
-        permalinkBefore: true,
-        permalinkSymbol: '§'
-    })
+    html: true,
+    xhtmlOut: true,
+    typographer: true
+}).use(require("markdown-it-anchor"), {
+    permalink: true,
+    permalinkBefore: true,
+    permalinkSymbol: '§'
+})
     .use(require("markdown-it-toc-done-right"));
 
 module.exports = {
@@ -29,49 +29,57 @@ module.exports = {
     themeConfig: {
         logo: '/assets/img/logo.png',
         nav: [{
-                text: 'Home',
-                link: '/'
-            },
-            {
-                text: 'Web',
-                link: '/web/'
-            },
-            {
-                text: 'User',
-                link: '/user/'
-            },
-            {
-                text: 'External',
-                link: 'https://www.bilibili.com'
-            },
+            text: 'Home',
+            link: '/'
+        },
+        {
+            text: 'Web',
+            link: '/web/'
+        },
+        {
+            text: 'User',
+            link: '/user/'
+        },
+        {
+            text: 'External',
+            link: 'https://www.bilibili.com'
+        },
         ],
         sidebar: [{
-                title: 'Web World',
-                path: '/web',
-                collapsable: false, // 是否折叠, 默认值是 true,
-                children: [{
-                        title: 'JavaScript',
-                        path: '/web/javascript/',
-                        children: [
-                            '/web/javascript/Javascript-summary',
-                            '/web/javascript/Canvas'
-                        ]
-                    },
-                    {
-                        title: 'Node.js',
-                        path: '/web/node/',
-                        children: [
-                            '/web/node/node-basic',
-                        ]
-                    },
-                    {
-                        title: 'Git',
-                        path: '/web/others/git',
-                    }
-                    // '/web/javascript/Javascript-summary'
+            title: 'Web World',
+            path: '/web',
+            collapsable: false, // 是否折叠, 默认值是 true,
+            children: [
+                {
+                    title: 'Html',
+                    path: '/web/html/',
+                    children: [
+                        '/web/html/Html-Object'
+                    ]
+                },
+                {
+                    title: 'JavaScript',
+                    path: '/web/javascript/',
+                    children: [
+                        '/web/javascript/Javascript-summary',
+                        '/web/javascript/Canvas'
+                    ]
+                },
+                {
+                    title: 'Node.js',
+                    path: '/web/node/',
+                    children: [
+                        '/web/node/node-basic',
+                    ]
+                },
+                {
+                    title: 'Git',
+                    path: '/web/others/git',
+                }
+                // '/web/javascript/Javascript-summary'
 
-                ],
-            }
+            ],
+        }
 
         ],
         displayAllHeaders: true
@@ -81,7 +89,7 @@ module.exports = {
             // 修改客户端的 webpack 配置
         }
     },
-    chainWebpack(config) {
+    chainWebpack (config) {
         config.resolveLoader
             .modules
             .add(path.resolve(__dirname, '../../node_modules'))

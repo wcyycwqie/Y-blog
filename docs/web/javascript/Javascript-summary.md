@@ -1,8 +1,6 @@
 ---
-
-
-typora-copy-images-to: Md-IMG
 typora-root-url: ./
+typora-copy-images-to: ..\..\.vuepress\public\Md-IMG
 ---
 
 #  Javascript 总结
@@ -28,11 +26,11 @@ typora-root-url: ./
 
 Number、String、Boolean、undefined、Function、Object可以用typeof()来判断数据类型
 
-![image-20210421115457341](/Md-IMG/image-20210421115457341.png)
+![image-20210421115457341](./Md-IMG/image-20210421115457341.png)
 
 数组Array需要用 insteadsof () 来判断
 
-![image-20210421144355686](/Md-IMG/image-20210421144355686.png)
+![image-20210421144355686](./Md-IMG/image-20210421144355686.png)
 
 
 
