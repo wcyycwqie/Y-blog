@@ -15,8 +15,3 @@ react只有视图层(view)，只负责视图的渲染。
 `npx creat-react=app y-mage`
 
 #### 目录结构
-
-
-
-
-

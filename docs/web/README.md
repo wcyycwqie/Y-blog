@@ -1,8 +1,5 @@
 # Hello Web
 
-#### My Web notes 
+#### My Web notes
 
-I will record everythings about my web study.
-
-
-
+I will record everything about my web study.
