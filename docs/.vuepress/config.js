@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2020-12-02 10:20:27
- * @LastEditTime: 2022-02-15 11:24:50
+ * @LastEditTime: 2023-01-19 18:01:57
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
  * @FilePath: \Yblog\docs\.vuepress\config.js
@@ -42,7 +42,7 @@ module.exports = {
         },
         {
             text: 'External',
-            link: 'https://www.bilibili.com'
+            link: 'https://www.yfunny.cool'
         },
         ],
         sidebar: [{
