@@ -1,10 +1,10 @@
 <!--
  * @Author: your name
  * @Date: 2020-12-09 15:31:37
- * @LastEditTime: 2021-03-20 10:39:48
+ * @LastEditTime: 2023-02-19 23:02:47
  * @LastEditors: Chaoyue
  * @Description: In User Settings Edit
- * @FilePath: \Yblog\docs\.vuepress\components\Home.vue
+ * @FilePath: \Y-blog\docs\.vuepress\components\Home.vue
 -->
 
 <template>
@@ -15,9 +15,7 @@
           <img src="/assets/img/background/3.png" alt="" />
         </div>
         <div class="bar-item yel-col-3">
-          <div class="article-list">
-            <img src="/assets/img/background/4.png" alt="" />
-          </div>
+          <img src="/assets/img/background/4.png" alt="" />
         </div>
         <div class="bar-item yel-col-3">
           <img src="/assets/img/background/6.png" alt="" />

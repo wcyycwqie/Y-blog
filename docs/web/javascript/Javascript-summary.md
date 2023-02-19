@@ -15,7 +15,7 @@ typora-copy-images-to: ..\..\.vuepress\public\
 - String
 - Boolean
 - Null（空）
-- undefind（未定义）
+- undefind（未定义）``
 - Symbol
 
 **复杂数据类型：**
@@ -495,22 +495,6 @@ script全部代码、setTimeout、setInterval、setImmediate（浏览器暂时�
 #### 微任务（MicroTask）
 
 Process.nextTick（Node独有）、Promise、Object.observe(废弃)、MutationObserver
-
-
-
-
-
-## 网络请求
-
-### AJAX
-
-AJAX = Asynchronous JavaScript and XML（异步的 JavaScript 和 XML）。
-
-AJAX 可以发起对服务器的网络请求。
-
-AJAX 可以在不重新加载整个页面的情况下，与服务器交换数据并更新部分网页内容(优点：异步加载数据)。
-
-### Axios
 
 
 
